@@ -1,6 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="fill_parent"
-android:layout_height="fill_parent"
-android:fillViewport="true" />
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#13DAD1"
+>
+
+        <!--  Header  Starts-->
+        <LinearLayout android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/link_text_material_light"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <!-- Logo Start-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="69dp"
+                android:text="@string/header_name"
+                android:layout_marginLeft="120dip"
+
+                android:textSize="25dp"
+                android:gravity="center"
+
+                android:id="@+id/tv1"
+                android:textColor="#fffff8e9" />
+
+            <!-- Logo Ends -->
+        </LinearLayout>
+        <!--  Header Ends -->
+        <!-- Footer Start -->
+        <LinearLayout android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:background="@color/link_text_material_light"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copyright &#169; Problematics"
+                android:layout_gravity="center"
+                android:layout_marginLeft="120dp"
+                android:textSize="15dp"
+                android:id="@+id/tv2"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+        <!-- Footer Ends -->
+
+        <!-- Login Form -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_below="@id/header"
+            android:id="@+id/linearLayout"/>
+
+
+
+
+        <ImageView
+            android:background="#13DAD1"
+            android:src="@drawable/login"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/iv1"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <ImageView
+            android:background="#13DAD1"
+            android:src="@drawable/register"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/iv2"
+            android:layout_alignTop="@+id/iv1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:background="#13DAD1"
+            android:src="@drawable/highscores"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/iv3"
+
+            android:layout_below="@+id/iv1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="68dp" />
+
+        <ImageView
+            android:background="#13DAD1"
+            android:src="@drawable/team"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/iv4"
+            android:layout_below="@+id/iv2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <!-- Login Form Ends -->
+    </RelativeLayout>
+</ScrollView>
