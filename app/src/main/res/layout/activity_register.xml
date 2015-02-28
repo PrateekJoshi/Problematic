@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#000000">
+
+        <!--  Header  Starts-->
+
+        <!--  Header Ends -->
+        <!-- Footer Start -->
+        <LinearLayout android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="130dip"
+            android:background="#000000"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+
+            >
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/back"
+                />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/login_star"
+                />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/highscore_star"
+                />
+        </LinearLayout>
+        <!-- Footer Ends -->
+
+        <!-- Login Form -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_below="@+id/footer"
+            android:layout_marginTop="5dp"
+            >
+            <!--  Email Label -->
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="Full Name"
+                android:fontFamily="@string/header_name"
+                android:id="@+id/tv_name"
+                android:textSize="15dp"
+
+                />
+            <EditText android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:singleLine="true"
+                android:id="@+id/register_name"
+                android:textColor="#FFFFFF"
+                android:hint="First Last"
+                android:textColorHint="#FF0000"
+                />
+
+            <!--  Email Label -->
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="Email"
+                android:fontFamily="@string/header_name"
+                android:id="@+id/tv_email"
+                android:textSize="15dp" />
+            <EditText android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:id="@+id/register_email"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:hint="example@gmail.com"
+                android:textColorHint="#FF0000"
+                />
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="College"
+                android:fontFamily="@string/header_name"
+                android:id="@+id/tv_college"
+                android:textSize="15dp"
+
+
+                />
+            <EditText android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:id="@+id/register_college"
+                android:singleLine="true"
+                android:hint="my college name"
+                android:textColorHint="#FF0000"
+                />
+
+            <!--  Password Label -->
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:text="Password"/>
+            <EditText android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:password="true"
+                android:hint="its a secret"
+                android:textColorHint="#FF0000"
+                />
+            <!-- Login button -->
+            <Button android:id="@+id/btnLogin"
+                android:background="#FF0000"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:textColor="#FFFFFF"
+                android:text="Register"/>
+            <!-- Link to Registration Screen -->
+
+
+        </LinearLayout>
+        <!-- Login Form Ends -->
+    </RelativeLayout>
+
+</ScrollView>
