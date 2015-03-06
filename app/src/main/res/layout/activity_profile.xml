@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#000000">
+
+        <!--  Header  Starts-->
+
+        <!--  Header Ends -->
+        <!-- Footer Start -->
+        <LinearLayout android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="130dip"
+            android:background="#000000"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+
+            >
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/back"
+                android:id="@+id/btn_back_login"
+                />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/login_star"
+                />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/highscore_star"
+                />
+        </LinearLayout>
+        <!-- Footer Ends -->
+
+        <!-- Login Form -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_below="@+id/footer"
+            android:layout_marginTop="5dp"
+            android:id="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center_horizontal"
+            android:orientation="horizontal" >
+
+        <!--  Email Label -->
+            <ImageView
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src="@drawable/profile_pic"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="user_name "
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/login_username"
+                />
+
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|center_horizontal"
+                android:orientation="horizontal" >
+
+                <!--  Email Label -->
+                <ImageView
+                    android:layout_height="80dp"
+                    android:layout_width="80dp"
+                    android:src="@drawable/score"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="user_score "
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/login_score"
+                    />
+
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center_horizontal"
+            android:orientation="horizontal"
+            android:background="#FFCC99">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Categories"
+                android:id="@+id/catagories"
+                android:textColor="#FF3333"
+
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/footer2"
+                android:layout_width="fill_parent"
+                android:layout_height="130dip"
+                android:background="#000000"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/movies"
+                    android:id="@+id/movies"
+                    />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/literature"
+                    android:id="@+id/literature"
+                    />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/history"
+                    android:id="@+id/history"
+                    />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/footer3"
+                android:layout_width="fill_parent"
+                android:layout_height="130dip"
+                android:background="#000000"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/music"
+                    android:id="@+id/music"
+                    />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/seasons"
+                    android:id="@+id/seasons"
+                    />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/technology"
+                    android:id="@+id/technology"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!-- Login Form Ends -->
+    </RelativeLayout>
+
+</ScrollView>
