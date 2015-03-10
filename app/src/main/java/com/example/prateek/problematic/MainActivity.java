@@ -40,7 +40,7 @@ public class MainActivity extends Activity {
     ProgressDialog dialog = null;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) { //test
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
