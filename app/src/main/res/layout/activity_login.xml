@@ -1,5 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
 
-</LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000">
+
+        <!--  Header  Starts-->
+
+        <!--  Header Ends -->
+        <!-- Footer Start -->
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="130dip"
+            android:layout_alignParentTop="true"
+            android:background="#000000"
+            android:gravity="center"
+
+            >
+
+            <ImageView
+                android:id="@+id/btn_back_login"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/back" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/login" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/highscores" />
+        </LinearLayout>
+        <!-- Footer Ends -->
+
+        <!-- Login Form -->
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/footer"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:padding="10dip">
+            <!--  Email Label -->
+            <TextView
+                android:id="@+id/tv_login_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/tv_login_email"
+                android:text="@string/tv_login_email"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+
+                />
+
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/et"
+                android:hint="    example@gmail.com"
+                android:padding="20dp"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FF0000"
+
+                />
+
+            <!--  Email Label -->
+            <TextView
+                android:id="@+id/tv_login_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/header_name"
+                android:text="@string/tv_login_password"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/et"
+                android:hint="    its a secret"
+                android:padding="20dp"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FF0000" />
+
+            <!-- Login button -->
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="#FF0000"
+                android:text="Login"
+                android:textColor="#FFFFFF" />
+            <!-- Link to Registration Screen -->
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_login_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Status"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF" />
+
+        <!-- Login Form Ends -->
+    </RelativeLayout>
+
+</ScrollView>

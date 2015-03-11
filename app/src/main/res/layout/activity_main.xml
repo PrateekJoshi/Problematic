@@ -7,8 +7,7 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="#000000"
->
+        android:background="#e67e22">
 
         <!--  Header  Starts-->
 
@@ -16,85 +15,235 @@
         <!-- Footer Start -->
         <LinearLayout android:id="@+id/footer"
             android:layout_width="fill_parent"
-            android:layout_height="90dip"
-            android:background="#000000"
-            android:layout_alignParentBottom="true">
+            android:layout_height="100dip"
+            android:layout_alignParentTop="true"
+            android:background="#1abc9c"
+            android:gravity="center"
+
+
+            >
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Copyright &#169; Problematics"
-                android:layout_gravity="center"
-                android:layout_marginLeft="100dp"
-                android:textSize="15dp"
-                android:id="@+id/tv2"
-                android:textColor="#ffffffff" />
+
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:text="Problematics"
+                android:textColor="#2c3e50"
+                android:textSize="40dp"
+                android:textStyle="bold|normal"
+
+                />
         </LinearLayout>
+
         <!-- Footer Ends -->
 
-
+        <!-- Login Form -->
         <LinearLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
-            android:orientation="vertical"
+            android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dip"
+            android:layout_below="@+id/footer"
+            android:layout_marginTop="5dp"
 
-            android:id="@+id/linearLayout"/>
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/footer1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:background="#2ecc71"
+                android:gravity="center"
+
+                >
+
+                <!--  Email Label -->
+
+                <ViewFlipper
+                    android:id="@+id/viewflipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:autoStart="true"
+                    android:flipInterval="5000">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/slider2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/slider1" />
+
+                </ViewFlipper>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="top|center_horizontal"
+                android:orientation="horizontal">
 
 
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFCC99"
+                android:gravity="top|center_horizontal"
+                android:orientation="horizontal">
 
-        <ImageView
-            android:background="#000000"
-            android:src="@drawable/login"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:id="@+id/iv1"
-            android:layout_above="@+id/iv3"
+                <TextView
+                    android:id="@+id/catagories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
 
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+                    android:text="Multi Category Quiz"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#c0392b"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/footer2"
+                android:layout_width="fill_parent"
+                android:layout_height="130dip"
+                android:layout_alignParentTop="true"
+                android:background="#9b59b6"
+                android:gravity="center"
 
-        <ImageView
-            android:background="#000000"
-            android:src="@drawable/register"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:id="@+id/iv2"
-            android:layout_alignTop="@+id/iv1"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+                >
 
-        <ImageView
-            android:background="#000000"
-            android:src="@drawable/highscores"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:id="@+id/iv3"
+                <ImageView
+                    android:id="@+id/movies"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/login" />
 
-            android:layout_above="@+id/footer"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+                <EditText
+                    android:id="@+id/login_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dip"
+                    android:background="#e67e22"
+                    android:hint="example@gmail.com"
+                    android:padding="20dp"
+                    android:singleLine="true"
+                    android:textColor="#2c3e50"
+                    android:textColorHint="#2c3e50" />
 
-        <ImageView
-            android:background="#000000"
-            android:src="@drawable/team"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:id="@+id/iv4"
-            android:layout_alignTop="@+id/iv3"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            </LinearLayout>
 
-        <ImageView
-            android:src="@drawable/logo2"
-            android:layout_width="300dp"
-            android:layout_height="100dp"
-            android:id="@+id/iv5"
+            <LinearLayout
+                android:id="@+id/footer3"
+                android:layout_width="fill_parent"
+                android:layout_height="130dip"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+                android:background="#e74c3c"
+                android:gravity="center"
+
+                >
+
+                <ImageView
+                    android:id="@+id/music"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/lock" />
+
+                <EditText
+                    android:id="@+id/login_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dip"
+                    android:background="#e67e22"
+                    android:hint="********"
+                    android:padding="20dp"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textColor="#2c3e50"
+
+                    android:textColorHint="#2c3e50" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/footer3"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_alignParentTop="true"
+                android:background="#e74c3c"
+                android:gravity="center"
+
+                >
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f1c40f"
+                    android:text="Login and Play"
+                    android:textColor="#c0392b"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/footer4"
+                android:layout_width="fill_parent"
+                android:layout_height="130dip"
+                android:layout_alignParentTop="true"
+                android:background="#1abc9c"
+                android:gravity="center"
+
+                >
+
+                <ImageView
+                    android:id="@+id/iv_register"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/register" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/highscores" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/fb" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
         <!-- Login Form Ends -->
     </RelativeLayout>
+
 </ScrollView>
